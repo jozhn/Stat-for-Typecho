@@ -9,6 +9,9 @@
  * @link http://www.imhan.com
  *
  * 历史版本
+ * version 1.0.3 at 2018-08-24
+ * 修复PDO下数据表检测失败的错误
+ *
  * version 1.0.2 at 2010-07-03
  * 终于支持前台调用了
  * 接口支持Typecho 0.8的计数
