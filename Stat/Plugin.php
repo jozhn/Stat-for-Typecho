@@ -53,7 +53,7 @@ class Stat_Plugin implements Typecho_Plugin_Interface
 			return '检测到统计字段，插件启用成功';
 		} catch (Typecho_Db_Exception $e) {
 			$code = $e->getCode();
-			if(('Mysql' == $type && 1054 == $code) ||
+			if( ('Mysql' == $type && (1054 == $code || $code == '42S22')) ||
 					('SQLite' == $type && ('HY000' == $code || 1 == $code))) {
 				try {
 					if ('Mysql' == $type) {
